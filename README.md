@@ -1,4 +1,7 @@
-# VoltReserve – EV Charging Station Booking System ⚡
+# VoltReserve-Web – EV Charging Station Booking System ⚡
+
+![Thumbnail](images/VoltReserve-Web.png)
+
 
 Final Year Assignment – Enterprise Application Development (SE4040)  
 Sri Lanka Institute of Information Technology (SLIIT) – 2025
