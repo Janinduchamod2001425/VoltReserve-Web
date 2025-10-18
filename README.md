@@ -1,7 +1,8 @@
-# VoltReserve-Web – EV Charging Station Booking System ⚡
+# VoltReserve – EV Charging Station Booking System ⚡
+
+React (Vite) Web Application + .Net Backend Implementation
 
 ![Thumbnail](images/VoltReserve-Web.png)
-
 
 Final Year Assignment – Enterprise Application Development (SE4040)  
 Sri Lanka Institute of Information Technology (SLIIT) – 2025
@@ -9,6 +10,7 @@ Sri Lanka Institute of Information Technology (SLIIT) – 2025
 ---
 
 ## 📖 Overview
+
 VoltReserve is an **EV Charging Station Booking System** with:
 
 - **Web Application (Backoffice + Station Operators)**
@@ -16,6 +18,7 @@ VoltReserve is an **EV Charging Station Booking System** with:
 - **Backend Service (C# .NET Web API + MongoDB Atlas, hosted on IIS)**
 
 The system enables:
+
 - Management of **web users** with roles **Backoffice** and **StationOperator**
 - CRUD operations for **EV Owners** (NIC as primary key)
 - **Station Management** (create, update, schedules, deactivate if no active bookings)
@@ -26,6 +29,7 @@ The system enables:
 ## 🏗️ Architecture
 
 ### Tech Stack
+
 - **Backend:** ASP.NET Core Web API (C# 9.0+)
 - **Database:** MongoDB Atlas (NoSQL)
 - **Authentication:** JWT Bearer Tokens
@@ -34,6 +38,7 @@ The system enables:
 - **Mobile:** Native Android (Java/Kotlin + SQLite)
 
 ### High-Level Flow
+
 1. EV Owners create accounts (NIC = PK).
 2. Owners make bookings (≤ 7 days ahead, changes/cancellations ≥ 12h before).
 3. Backoffice manages users, stations, and schedules.
@@ -45,6 +50,7 @@ The system enables:
 ## 🔑 Roles & Authorization
 
 - **Backoffice**
+
   - Can register users (Backoffice/StationOperator)
   - Can manage EV Owners
   - Can create/update/deactivate Stations & schedules
@@ -56,10 +62,10 @@ The system enables:
   - Can confirm QR codes / finalize sessions
 
 ### Authorization Policies
+
 Defined in `Program.cs`:
+
 - `BackofficeOnly`
 - `OperatorOrBackoffice`
 
 ---
-
-
